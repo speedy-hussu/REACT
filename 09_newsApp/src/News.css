@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0%;
+  font-family: "poppins";
+}
+.nav {
+  position: fixed;
+  top: 0;
+  box-sizing: border-box;
+  padding: 0px 50px;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #dbd8e3;
+  color: #2a2438;
+  justify-content: space-between;
+}
+.nav h1 {
+  font-size: 36px;
+}
+.input {
+  width: 560px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.input-date input {
+  box-sizing: border-box;
+  padding: 0px 15px;
+  height: 35px;
+  width: 150px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border: 1px solid #2a2438;
+}
+.input-text {
+  width: 400px;
+  height: 35px;
+}
+.input-text input {
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 0px 10px;
+  border: 1px solid #2a2438;
+  color: #2a2438;
+  font-size: 16px;
+  height: 100%;
+  width: 100%;
+}
+.input-text input::placeholder {
+  color: #2a2438;
+  font-size: 16px;
+}
+.container {
+  margin-top: 70px;
+  min-height: 100dvh;
+  width: 100%;
+  background: #2a2438;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  padding: 15px;
+  width: 300px;
+  background-color: #5c5470;
+  color: #dbd8e3;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 30px 25px;
+  flex-direction: column;
+}
+.card .img {
+  width: 300px;
+  border-radius: 5px;
+  overflow: hidden;
+  height: 200px;
+  border: 1px solid #dbd8e3;
+}
+.card .img img {
+  height: 100%;
+  width: 100%;
+}
+.card .title {
+  min-height: 100px;
+}
+.card .title h1 {
+  color: rgb(162, 182, 122);
+  font-size: 17px;
+  font-weight: 600;
+  margin: 10px 0px;
+}
+a {
+  color: #fff;
+}
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #2a2438;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #5c5470;
+  border-radius: 10px;
+}
+@media screen and (width<925px) {
+  .nav {
+    justify-content: center;
+    height: 100px;
+  }
+  .input {
+    justify-content: space-between;
+  }
+}
+@media screen and (width<660px) {
+  .nav{
+    height: 150px;
+  }
+  .input {
+    justify-content: center;
+  }
+}

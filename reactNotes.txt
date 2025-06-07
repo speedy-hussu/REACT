@@ -1,0 +1,72 @@
+IMP NOTES FOR REACT LEARNING
+
+*   in plain react you can use .js file naming convention starting with capital letter 
+    but in vite+react we have to use .jsx file naming convention starting with capital letter
+
+
+
+cd.. used for moving from child to parent directory.
+
+npm create vite@latest for react folder structure generation
+
+<> </>:
+    It is called fragements as jsx return only one component 
+    at one time so we use this for returning the whole conatiner.
+
+
+Hydration :
+    when html css is loaded in the webpage but the elements are
+    not changing their state as js is not injected yet
+
+Reconcillation : 
+    differentiate between two DOM's "virtual" and "browswer" 
+    and re-render those difference instead of reloading whole 
+    DOM for every changes
+
+useState hook:
+    it stores elements current state, include an array of a
+    variable name and a function eg:[count,setCount] = useState(0)
+
+useEffect hook :
+    code written in useEffect hook will render when anyone of the 
+    variable changes given hook eg useEffect(()=>{
+        //code to be rendered
+    }[count,age,number]);
+
+    especially used for Api callings
+
+useId hook :
+    used for assigning special ID to element.
+    especially used in map().
+
+Creation of customise hook or Custom hooks :
+    make a .js file in a seperate folder and 
+    write the code in that file and import it
+    to app.jsx and use
+
+Routing :
+    means navigation from  one page to another
+    without reloading the whole DOM 
+    react just re render the components
+    using react-router-DOM
+
+loader in router :
+    it pre-loads the data before navigating to 
+    the component.
+
+ContexApi:
+    ContexApi is use for passing props from 
+    parent to deep child component in a hierarchical
+    tree 
+    Or in easy words contexApi it provides a global 
+    state management solution in which data/sate/props 
+    are stored and accessed by 
+    grand childrens without prop drilling 
+
+CreateContex :
+    It creates a Context object, which holds the shared
+     state and allows components to subscribe to it.
+
+UseContex:
+    It allows components to consume the context value 
+    without needing to pass props manually.

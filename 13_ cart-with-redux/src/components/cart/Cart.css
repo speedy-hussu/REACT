@@ -1,0 +1,45 @@
+.cart {
+  min-height: calc(100% - 50px);
+  box-sizing: border-box;
+  padding: 40px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  position: relative;
+}
+.cart button {
+  height: 0;
+  width: 0;
+  height: 25px;
+  width: 25px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cart .quantity {
+  width: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cart #btn-inc:hover {
+  background-color: lightgreen;
+}
+.cart #btn-dec:hover {
+  background-color: lightcoral;
+}
+.cart #remove {
+  background-color: transparent;
+  font-size: 20px;
+  border: none;
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  margin: 5px 5px;
+}
