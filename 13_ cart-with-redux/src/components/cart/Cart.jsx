@@ -6,10 +6,7 @@ import { addToCart, removeFromCart, reduceFromCart } from "../../app/cartSlice";
 
 function Cart() {
   const cartItems = useSelector((s) => s.cart.cart);
-  const totalProducts = cartItems.reduce(
-    (total, item) => (total += item.quantity),
-    0
-  );
+
   const totalPrice =
     Math.floor(
       cartItems.reduce(
@@ -17,6 +14,7 @@ function Cart() {
         0
       ) * 10
     ) / 10;
+  const totalProducts = useSelector((s) => s.cart.totalQuantity);
   const dispatch = useDispatch();
   return (
     <>
